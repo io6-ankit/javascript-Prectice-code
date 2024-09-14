@@ -1,19 +1,8 @@
-//First Question
 // var _myName = "Ankit";
+// var _1my__Name = "maurya";
+var 1myName ="Maurya";
+// var $myName ="AnkitMaurya";
+// console.log(_1my__Name);
+console.log(1myName);
+// console.log($myName);
 // console.log(_myName);
-// Answer=Ankit
-
-//Second Question
-// var _1myName = "Maurya";
-// console.log(_1myName);
-//Answer=Error(_1myName is not defined)
-
-//Third Question
-// var _my__Name = "Ankit Maurya";
-// console.log(_my__Name);
-//Answer=Ankit Maurya
-
-//Fourth Question
-var $myName = "My Name Is Ankit Maurya";
-console.log($myName);
-//Answer=My Name Is Ankit Maurya
