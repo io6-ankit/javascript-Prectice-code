@@ -10,10 +10,17 @@
     <div class="box">
       <h3 class="heading">Stop Watch</h3>
       <div class="display">
-        <div class="watch" id="count">0</div>
+        <div class="watch-section">
+          <span class="watch" id="hr">00</span>
+          <span class="watch">:</span>
+          <span class="watch" id="min">00</span>
+          <span class="watch">:</span>
+          <span class="watch" id="sec">00</span>
+          <!-- <span class="watch" id="count">00</span> -->
+        </div>
       </div>
       <div class="button-section">
-        <button class="button" onclick="handleClick()">Start</button>
+        <button class="button" onclick="handleClickStart()">Start</button>
         <button class="button" onclick="handleClickStop()">Stop</button>
         <button class="button" onclick="handleClickReset()">Reset</button>
       </div>
