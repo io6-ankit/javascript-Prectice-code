@@ -13,18 +13,32 @@
 //   var d = new Data();
 //   document.querySelector(".watch").innerHTML = d.toLocaleTimeString();
 // }
-var num = 0;
-var count = 0;
-var timer = false;
+let num = 0;
+let count = 0;
+let timer = false;
 function handleClick() {
   timer = true;
   stopwatch();
 }
 handleClick();
+function handleClickStop() {
+  timer = false;
+  stopwatch();
+}
+handleClickStop();
+function handleClickReset() {
+  timer = false;
+  if (timer == false) {
+    count = 0;
+    document.getElementById("count").innerHTML = count;
+  }
+  handleClickReset();
+}
 function stopwatch() {
   if (timer == true) {
     count = count + 1;
     document.getElementById("count").innerHTML = count;
-    setTimeout("stopwatch()", 10);
+    setTimeout("stopwatch()", 100);
   }
 }
+stopwatch(handleClick);
