@@ -1,0 +1,10 @@
+body {
+  /* background-color: red; */
+}
+.main {
+  height: 500px;
+  width: 450px;
+  border: 1px solid black;
+  margin: auto;
+  align-items: center;
+}
