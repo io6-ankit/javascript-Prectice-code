@@ -1,0 +1,32 @@
+body {
+  /* background-color: red; */
+}
+.main {
+  height: 300px;
+  width: 350px;
+  border: 1px solid black;
+  margin: auto;
+}
+.heading {
+  margin: 0 0 0 35%;
+  font-size: 25px;
+  color: rgb(156, 96, 18);
+}
+.box {
+  height: 80px;
+  width: 300px;
+  border: 1px solid black;
+  margin: auto;
+}
+.button-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+  /* height: 30px; */
+  /* width: 30px; */
+}
+.button {
+  height: 40px;
+  width: 90px;
+}
