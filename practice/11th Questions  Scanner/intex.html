@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scanner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <label for="qrText">Enter your Text or URL</label>
+      <input type="text" id="qrText" placeholder="Text or URL" required />
+      <button type="button" class="btn" id="genBtn">Generate QR Code</button>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.js"></script>
+  <script>
+    let qrContainer = document.getElementById("qrContainer");
+    let qrText = document.getElementById("qrText");
+    let genBtn = document.getElementsById("genBtn");
+    generateQR = (qrText) => {
+      qrContainer.innerHTML = "";
+      return new QRCode(qrContainer, {
+        text: "qrText",
+        width: 200,
+        height: 200,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H,
+      });
+    };
+    genBtn.addEventListeners("click", (e) => {
+      let text = qrText.ariaValue;
+      qrcode = generateQR(text);
+    });
+  </script>
+</html>
